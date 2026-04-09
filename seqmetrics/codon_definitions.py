@@ -1,0 +1,25 @@
+# define synonymous codons
+SYN_CODONS_BY_AA = {
+    "A": ["GCT", "GCC", "GCA", "GCG"],
+    "R": ["CGT", "CGC", "CGA", "CGG", "AGA", "AGG"],
+    "N": ["AAT", "AAC"],
+    "D": ["GAT", "GAC"],
+    "C": ["TGT", "TGC"],
+    "Q": ["CAA", "CAG"],
+    "E": ["GAA", "GAG"],
+    "G": ["GGT", "GGC", "GGA", "GGG"],
+    "H": ["CAT", "CAC"],
+    "I": ["ATT", "ATC", "ATA"],
+    "L": ["TTA", "TTG", "CTT", "CTC", "CTA", "CTG"],
+    "K": ["AAA", "AAG"],
+    "M": ["ATG"],
+    "F": ["TTT", "TTC"],
+    "P": ["CCT", "CCC", "CCA", "CCG"],
+    "S": ["TCT", "TCC", "TCA", "TCG", "AGT", "AGC"],
+    "T": ["ACT", "ACC", "ACA", "ACG"],
+    "W": ["TGG"],
+    "Y": ["TAT", "TAC"],
+    "V": ["GTT", "GTC", "GTA", "GTG"],
+    "*": ["TAA", "TAG", "TGA"],  # often excluded for CAI
+}
+

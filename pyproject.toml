@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seqmetrics"
+version = "0.1.0"
+description = "Sequence analysis tools for codon- and protein-level properties"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Mihaela Zavolan", email = "mihaela.zavolan@unibas.ch" }
+]
+dependencies = [
+  "biopython>=1.80"
+]
+keywords = ["bioinformatics", "protein", "codon", "sequence-analysis"]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8",
+  "build>=1.2"
+]
+
+[project.scripts]
+seqmetrics = "seqmetrics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["seqmetrics*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
