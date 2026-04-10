@@ -2,8 +2,12 @@
 build/
 dist/
 backups/
+results/
+Analysis.ipynb
+seqmetrics/Analysis.ipynb
 .pytest_cache/
 .ipynb_checkpoints/
 __pycache__/
 *.egg-info/
 *.pyc
+.DS_Store

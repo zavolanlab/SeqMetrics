@@ -1,5 +1,7 @@
 # SeqMetrics
 
+[![CI](https://github.com/zavolanlab/SeqMetrics/actions/workflows/ci.yml/badge.svg)](https://github.com/zavolanlab/SeqMetrics/actions/workflows/ci.yml)
+
 SeqMetrics computes per-sequence metrics for coding sequences, combining:
 
 - nucleotide composition
